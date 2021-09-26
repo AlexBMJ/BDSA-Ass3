@@ -8,20 +8,20 @@ namespace Assignment3.Tests
         [Fact]
         public void Func_returns_12_when_multiplying_3_by_4()
         {
-            Assert.Equal(12, Extensions.product(3,4));
+            Assert.Equal(12, Extensions.Product(3,4));
            
         }
 
         [Fact]
-        public void Func_returns_12_when_multiplying_3_y_4()
+        public void reverse()
         {
-            Assert.Equal("olleh", Extensions.reverse("hello"));
+            Assert.Equal("olleh", Extensions.Reverse("hello"));
         }
 
         [Fact]
-        public void Func_returns_12_when_multiplyg_3_y_4()
+        public void Func_returns_true_for_string0042_and_integer_42()
         {
-            Assert.Equal(true, Extensions.isNumericallyEqual(42, "0042")); 
+            Assert.True(Extensions.IsNumericallyEqual(42, "0042")); 
         }
     }
 }
