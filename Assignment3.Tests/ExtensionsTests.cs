@@ -37,15 +37,15 @@ namespace Assignment3.Tests {
         {
             string input = "facebook";
             
-            Assert.Equal(8, input.WordCount());
+            Assert.Equal(1, input.WordCount());
         }
 
         [Fact]
         public void WordCount_returns_8_for_word_HelloWorld_123123()
         {
-            string input = "HelloWorld 123123";
+            string input = "Hello World 123123";
             
-            Assert.Equal(10, input.WordCount());
+            Assert.Equal(2, input.WordCount());
         }
     }
 }

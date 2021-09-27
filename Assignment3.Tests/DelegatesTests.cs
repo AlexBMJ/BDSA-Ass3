@@ -13,9 +13,10 @@ namespace Assignment3.Tests
         }
 
         [Fact]
-        public void Func_Revers_returns_olleh_when_given_hello()
-        {
-            Assert.Equal("olleh", Extensions.Reverse("hello"));
+        public void Func_Revers_returns_olleh_when_given_hello() {
+            var g = Extensions.Reverse("hello");
+            Console.WriteLine(g);
+            Assert.Equal("olleh", g);
         }
 
         [Fact]
