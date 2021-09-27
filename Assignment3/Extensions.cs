@@ -10,9 +10,11 @@ namespace Assignment3
             items.SelectMany(itemList => itemList ??new List<T>());
 
     
-        public static bool IsSecure(this Uri link)
-        {
-            return link.AbsoluteUri.StartsWith("http") && (link.AbsoluteUri.EndsWith(".com/") || link.AbsoluteUri.EndsWith(".dk/") || link.AbsoluteUri.EndsWith(".org/"));
+        public static bool IsSecure(this Uri uri) {
+            if (uri.Scheme == Uri.UriSchemeHttps) {
+                return true;
+            }
+            return false;
         }
 
         public static int WordCount(this string input){

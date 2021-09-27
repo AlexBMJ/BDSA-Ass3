@@ -21,18 +21,18 @@ namespace Assignment3
              return WizardNames;
         }
 
-        public static IEnumerable<(string,int)> GetWizardsFromHarryPotterByExtension()
+        public static IEnumerable<(string,int?)> GetWizardsFromHarryPotterByExtension()
         {
             var harryPotter = Wizard.Wizards.Value.Where(w => w.Medium.Contains("Harry Potter"))
                                             .Select(c => (c.Name, c.Year));
             return harryPotter;
         }
 
-        public static IEnumerable<(string, int)> GetWizardsFromHarryPotterByLINQ()
+        public static IEnumerable<(string, int?)> GetWizardsFromHarryPotterByLINQ()
         {
             var harryPotter = from wizard in Wizard.Wizards.Value
                                 where wizard.Medium.Contains("Harry Potter")
-                                select (c.Name, c.Year) ;
+                                select (wizard.Name, wizard.Year) ;
             return harryPotter;
         }
        

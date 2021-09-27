@@ -10,7 +10,7 @@ namespace Assignment3.Tests
         {
             string[] wizardNames = {"Lord Voldemort" , "Albus Dumbledore"};
 
-            Assert.Equal(wizardNames, Queries.GetWizardNames();
+            Assert.Equal(wizardNames, Queries.GetWizardNamesByExtension());
 
         }
     }

@@ -21,8 +21,6 @@ namespace Assignment3.Tests {
         [Fact]
         public void IsSecure_return_true_if_startswith_https_and_endswith_com(){
             Uri uri = new Uri("https://docs.microsoft.com/");
-            
-
             Assert.True(uri.IsSecure());
         }
 
