@@ -26,5 +26,19 @@ namespace Assignment3.Tests
             (string,int?)[] wizardNames = {("Lord Voldemort",2001) , ("Albus Dumbledore",2001)};
             Assert.Equal(wizardNames, Queries.GetWizardsFromHarryPotterByLINQ());
         }
+        
+        [Fact]
+        public void GetYearOfFirstSithByExtension_ReturnsNameAndYear()
+        {
+            int? wizardNames = 1977;
+            Assert.Equal(wizardNames, Queries.GetYearOfFirstSithByExtension());
+        }
+        
+        [Fact]
+        public void GetYearOfFirstSithByLINQ_ReturnsNameAndYear()
+        {
+            int? wizardNames = 1977;
+            Assert.Equal(wizardNames, Queries.GetYearOfFirstSithByLINQ());
+        }
     }
 }
